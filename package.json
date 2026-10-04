@@ -1,0 +1,23 @@
+{
+  "name": "streamdeck-plugin-audio-display",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Proof of concept: a live spectrum analyser across all 32 keys of a Stream Deck XL, fed by macOS system audio.",
+  "license": "MIT",
+  "author": "wrtsprt",
+  "type": "module",
+  "scripts": {
+    "test": "node --test 'test/*.test.js'",
+    "build": "esbuild src/plugin.js --bundle --platform=node --format=esm --target=node24 --banner:js=\"import { createRequire } from 'module'; const require = createRequire(import.meta.url);\" --outfile=com.wrtsprt.audio-display.sdPlugin/bin/plugin.js",
+    "bench:hid": "node bench/hid-bench.js",
+    "build:tap": "swiftc -O capture/audio-tap.swift -o com.wrtsprt.audio-display.sdPlugin/bin/audio-tap -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __info_plist -Xlinker capture/Info.plist && codesign -s - -f com.wrtsprt.audio-display.sdPlugin/bin/audio-tap"
+  },
+  "dependencies": {
+    "@elgato-stream-deck/node": "^7.7.1"
+  },
+  "devDependencies": {
+    "@elgato/cli": "^1.10.1",
+    "@elgato/streamdeck": "^3.0.1",
+    "esbuild": "^0.28.2"
+  }
+}

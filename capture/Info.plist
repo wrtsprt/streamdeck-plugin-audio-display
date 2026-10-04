@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIdentifier</key>
+	<string>com.wrtsprt.audio-display.tap</string>
+	<key>CFBundleName</key>
+	<string>Audio Display Tap</string>
+	<key>NSAudioCaptureUsageDescription</key>
+	<string>Audio Display reads what's playing to draw a spectrum on the Stream Deck.</string>
+</dict>
+</plist>

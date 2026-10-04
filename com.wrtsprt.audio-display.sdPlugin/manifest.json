@@ -1,0 +1,26 @@
+{
+	"Name": "Audio Display",
+	"Version": "0.1.0.0",
+	"Author": "wrtsprt",
+	"Actions": [
+		{
+			"Name": "Display Pixel",
+			"UUID": "com.wrtsprt.audio-display.pixel",
+			"Icon": "imgs/icon",
+			"Tooltip": "One tile of the full-deck spectrum. Put it on all 32 keys.",
+			"Controllers": ["Keypad"],
+			"SupportedInMultiActions": false,
+			"States": [{ "Image": "imgs/key", "ShowTitle": false }]
+		}
+	],
+	"Category": "Audio Display",
+	"CategoryIcon": "imgs/icon",
+	"CodePath": "bin/plugin.js",
+	"Description": "Uses all keys of a Stream Deck XL as one display.",
+	"Icon": "imgs/plugin",
+	"SDKVersion": 3,
+	"Software": { "MinimumVersion": "7.1" },
+	"OS": [{ "Platform": "mac", "MinimumVersion": "12" }],
+	"Nodejs": { "Version": "24", "Debug": "enabled" },
+	"UUID": "com.wrtsprt.audio-display"
+}

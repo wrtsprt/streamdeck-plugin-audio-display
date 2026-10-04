@@ -1,0 +1,7 @@
+node_modules/
+.DS_Store
+
+# Build output: run `npm run build` and `npm run build:tap`
+com.wrtsprt.audio-display.sdPlugin/bin/plugin.js
+com.wrtsprt.audio-display.sdPlugin/bin/audio-tap
+com.wrtsprt.audio-display.sdPlugin/logs/
